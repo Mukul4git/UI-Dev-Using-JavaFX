@@ -35,6 +35,7 @@ public class GraphViewController implements Initializable {
         Parent part = FXMLLoader.load(getClass().getResource("Table-view.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(part);
+        stage.setTitle("Welcome to Assignment1");
         stage.setScene(scene);
         stage.show();
 
@@ -50,11 +51,11 @@ public class GraphViewController implements Initializable {
 
         //Mock Data for BarChart
 
-        series1.getData().add(new XYChart.Data("India", 12000));
+        series1.getData().add(new XYChart.Data("India", 7000));
         series1.getData().add(new XYChart.Data("Australia", 8000));
-        series1.getData().add(new XYChart.Data("China", 98000));
-        series1.getData().add(new XYChart.Data("Canada", 67000));
-        series1.getData().add(new XYChart.Data("USA", 34000));
+        series1.getData().add(new XYChart.Data("China", 9800));
+        series1.getData().add(new XYChart.Data("Canada", 6700));
+        series1.getData().add(new XYChart.Data("USA", 6800));
 
         //Adding data into the Chart
         barChart.getData().addAll(series1);
