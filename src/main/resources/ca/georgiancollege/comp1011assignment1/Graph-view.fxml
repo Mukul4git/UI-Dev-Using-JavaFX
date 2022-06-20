@@ -18,7 +18,7 @@
             <Label styleClass="labels" stylesheets="@style.css" text="Population Data" BorderPane.alignment="CENTER" />
          </top>
          <center>
-            <BarChart styleClass="table-column" stylesheets="@style.css" BorderPane.alignment="CENTER">
+            <BarChart fx:id="barChart" styleClass="table-column" stylesheets="@style.css" BorderPane.alignment="CENTER">
               <xAxis>
                 <CategoryAxis fx:id="CategoryAxis" side="BOTTOM" />
               </xAxis>
